@@ -17,8 +17,6 @@ de metadata "user_metadata". Luego, encenderemos la máquina virtual donde se ej
 
 ![image](https://user-images.githubusercontent.com/37401820/226208592-f0309160-528e-43ae-bccb-d25875a2fb26.png)
 
-![image](https://user-images.githubusercontent.com/37401820/226208734-fc379ac0-8d7c-42b0-a111-62e45d26e040.png)
-
 ![image](https://user-images.githubusercontent.com/37401820/226208787-8ac694b8-1043-4e00-a2c6-76c0253fe734.png)
 
 
