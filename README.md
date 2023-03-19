@@ -15,6 +15,18 @@ Trabajaremos con dos fuentes de datos diferentes. La primera fuente de datos es 
 Para procesar estas fuentes primero hay que ir al script de SQL de google cloud computing y para ello empezar por el **JBDCProvisioner** Para poder procesar estas fuentes de datos, primero debemos iniciar la instancia SQL de GCP y ejecutar el archivo "jdbcProvisioner.scala" este creara las tablas
 de metadata "user_metadata". Luego, encenderemos la máquina virtual donde se ejecutará Kafka, que generará un stream de datos que serán leídos por Scala.
 
+![image](https://user-images.githubusercontent.com/37401820/226208592-f0309160-528e-43ae-bccb-d25875a2fb26.png)
+
+![image](https://user-images.githubusercontent.com/37401820/226208734-fc379ac0-8d7c-42b0-a111-62e45d26e040.png)
+
+![image](https://user-images.githubusercontent.com/37401820/226208787-8ac694b8-1043-4e00-a2c6-76c0253fe734.png)
+
+
 El programa de Scala se suscribirá al topic "devices" de Kafka para poder consumir esos datos. Los datos leídos serán parseados a formato Json y guardados en formato parquet para que puedan ser leídos por el proceso Batch. Los datos en formato Json serán enriquecidos con metadata obtenida de la tabla "user_metadata" de la base de datos.
+
+![Uploading image.png…]()
+
+
+![image](https://user-images.githubusercontent.com/37401820/226208690-bc70cd6f-09bb-4a70-9ede-4fa0ea77952a.png)
 
 Posteriormente, con esos datos ya enriquecidos, se realizarán las agregaciones y los resultados se guardarán en las tablas "bytes_agg_antenna", "bytes_agg_user" y "bytes_agg_app" de la base de datos. Por otro lado, el proceso Batch leerá los archivos parquet para una hora en particular y realizará las agregaciones correspondientes, cuyos resultados se guardarán en las tablas "bytes_agg_antenna_1h", "bytes_agg_user_1h", "bytes_agg_app_1h" y "users_over_quota_1h" de la base de datos.
