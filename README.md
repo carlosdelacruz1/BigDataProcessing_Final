@@ -2,7 +2,7 @@
 
 # BigDataProcessing
 
-En resumen, este proyecto final de Big Data Processing se enfoca en la construcción de una arquitectura lambda para procesar grandes volúmenes de datos recolectados desde antenas de telefonía móvil utilizando diferentes tecnologías y herramientas para satisfacer las necesidades específicas de cada capa de la arquitectura. Además, se utilizan dos fuentes de datos diferentes que se procesan y se enriquecen para obtener resultados precisos y útiles que se almacenan en diferentes tablas de la base de datos.
+En resumen, este proyecto final de Big Data Processing se enfoca en la construcción de una arquitectura lambda para procesar grandes volúmenes de datos recolectados desde antenas de telefonía móvil utilizando diferentes tecnologías y herramientas para satisfacer las necesidades específicas de cada capa de la arquitectura. Además, se utilizan dos fuentes de datos diferentes que se procesan y se enriquecen para obtener resultados precisos y útiles que se almacenan en diferentes tablas de la base de datos.`
 
 En este proyecto final de procesamiento de grandes volúmenes de datos, vamos a construir una arquitectura lambda que nos permita procesar los datos recolectados desde antenas de telefonía móvil. Esta arquitectura se divide en tres capas que son la capa de procesamiento en streaming, la capa de procesamiento por lotes y la capa encargada de servir los datos.
 
