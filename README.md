@@ -10,7 +10,7 @@ Para cada capa de la arquitectura lambda, utilizaremos diferentes tecnologías q
 
 Trabajaremos con dos fuentes de datos diferentes. La primera fuente de datos es el uso de datos de los dispositivos móviles, que será enviada desde las antenas y llegará al sistema de mensajes de Apache Kafka en tiempo real. La segunda fuente de datos es una base de datos con información de los usuarios, que suele ser modificada por operarios a través de un servidor web.
 
-Para procesar estas fuentes primero hay que ir al script de SQL de google cloud computing y para ello empezar por el **jbdcProvisioner** Para poder procesar estas fuentes de datos, primero debemos iniciar la instancia SQL de GCP y ejecutar el archivo "jdbcProvisioner.scala" este creara las tablas 
+Para procesar estas fuentes primero hay que ir al script de SQL de google cloud computing y para ello empezar por el **JBDCProvisioner** Para poder procesar estas fuentes de datos, primero debemos iniciar la instancia SQL de GCP y ejecutar el archivo "jdbcProvisioner.scala" este creara las tablas 
 de metadata "user_metadata". Luego, encenderemos la máquina virtual donde se ejecutará Kafka, que generará un stream de datos que serán leídos por Scala.
 
 El programa de Scala se suscribirá al topic "devices" de Kafka para poder consumir esos datos. Los datos leídos serán parseados a formato Json y guardados en formato parquet para que puedan ser leídos por el proceso Batch. Los datos en formato Json serán enriquecidos con metadata obtenida de la tabla "user_metadata" de la base de datos.
