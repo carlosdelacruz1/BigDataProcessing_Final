@@ -1,3 +1,5 @@
+***Tambien hay un archivo zip con el proyecto comprimido por si da fallos lo otro***
+
 #### SE ME ACABO EL CREDITO EN GOOGLE CLOUD CON LO CUAL LAS CONEXIONES NO ESTAN BIEN, LAS IPs LAS HE SUSTITUIDO POR LAS TEORICAS QUE PUSE EN SU DIA
 
 # BigDataProcessing
